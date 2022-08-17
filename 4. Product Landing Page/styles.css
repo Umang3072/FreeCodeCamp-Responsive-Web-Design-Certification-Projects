@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+body {
+  color: black;
+  background-color: #a8dadc;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 1.25em;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  border-bottom: 2px solid white;
+  z-index: 2;
+  background-color:white;
+  padding-top: 0.5em;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.logo {
+  font-size: em;
+}
+
+#header-img {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  z-index: 2;
+}
+
+.nav-link {
+  vertical-align: middle;
+  padding: 1em;
+  width: 8em; 
+  margin: 0 0.25em;
+}
+
+.nav-link:hover {
+    background-color: #a8dadc;
+    color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#main-content {
+  display: flex;
+  position: relative;
+  top: 6em;
+  justify-content: center;
+  border-bottom: 2px solid white;
+}
+
+#img-caption {
+  text-align: center;
+  margin: 0.5em;
+}
+
+#product, #special, #op, #contact {
+  position: relative;
+  top: 6em;
+  margin: 1em;
+  border-bottom: 2px solid white;
+  padding-bottom: 1.5em;
+}
+
+h2{
+  text-align:center;
+}
+
+#main-content-link, #product-link, #special-link, #op-link, #contact-link {
+  position: absolute;
+  top: -6.5em;
+  z-index: -1;
+}
+
+#product-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.product-item {
+  background-color:white;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin: 0.5em;
+}
+
+.product-item > h2{
+  text-align:left;
+}
+
+.big-image{
+  background-color: #a8dadc;
+}
+
+#video-container {
+  text-align: center;
+}
+
+#op-content {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.small-image {
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 0 1em 1em 0;
+}
+
+.text {
+  width: 24em;
+  text-align: left;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 0.25em 1em;
+  margin: 0 1em 1em 0;
+}
+
+#small-text {
+  font-size: 0.5em;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.2em;
+  background-color:white;
+  padding: 1em;
+}
+
+#email, #submit {
+  margin: 0.5em;
+  padding: 0.25em;
+}
+
+#email {
+  width: 20em;
+  font-size: 1em;
+  background-color:#a8dadc;
+  border-radius: 0.2em;
+  border: none;
+}
+
+#submit {
+  width: 5em;
+}
+
+button, #submit {
+  border: none;
+  background-color: black;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: white;
+  padding: 0.25em;
+  border-radius: 0.2em;
+}
+
+button:hover, #submit:hover {
+  background-color: #a8dadc;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 850px) {
+  #header {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    z-index: 2;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+  }
+  .logo {
+    margin-bottom: 0.2em;
+  }
+  .nav-links {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+  }
+  .nav-link {
+    width: auto;
+    font-size: 0.8em;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  li {
+    margin: 0;
+  }
+  #main-content, #image, #product, #special, #op, #contact {
+  position: relative;
+  top: 5em;
+  }
+  #product-list {
+  display: block;
+  }
+  .product-item {
+    width: 80%;
+    margin: 0.5em;
+  }
+  #video {
+    width: 80%;
+  } 
+}
