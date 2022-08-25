@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+  font-size: 20px;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  background-color: #FF8381;
+  z-index: 1; 
+}
+
+#nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  flex-wrap: wrap; 
+}
+
+#nav-list li:hover {
+  background-color: white;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  color: black;
+}
+
+#welcome-section, .contact-section {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  background-color:#876d97;
+}
+
+.contact-section {
+  flex-direction: column;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.center h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.center p {
+  font-size: 2rem;
+  padding: 15px;
+  color: #FF8381;
+}
+
+.center .small {
+  font-size: 1rem;
+}
+
+.space-issue{
+  padding-top: 3rem;
+}
+
+#links {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+#profile-link:hover {
+  animation: zoom-in-zoom-out 1s ease;
+}
+
+@keyframes zoom-in-zoom-out{
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.5,1.5);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+#projects {
+  background-color: #F9AC66;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      'project1 project2'
+      'project3 project4';
+  justify-content: space-around;
+  padding-top: 0.5rem;
+}
+
+#project1 {
+  grid-area: project1;
+}
+
+#project2 {
+  grid-area: project2;
+}
+
+#project3 {
+  grid-area: project3;
+}
+
+#project4 {
+  grid-area: project4;
+}
+
+.fig-container {
+  background-color:#FF8381;
+  color: #472731;
+  transition: 0.4s;
+}
+
+.fig-container img {
+    height: 20vw;
+    width: 28vw;
+}
+
+.fig-container:hover{
+  background-color: #FF8381;
+  transform: scale(1.1);
+}
+
+.fig-nav {
+  text-decoration: none;
+}
+
+figcaption {
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-tile{
+ padding: 1rem; 
+}
+
+@media only screen and (max-width: 850px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+           'project1'
+           'project2'
+           'project3'
+           'project4';
+    justify-content: space-around;
+  } 
+  * {
+    font-size: 20px;
+  }
+  .fig-container img {
+    height: 37vw;
+    width: 60vw;
+  } 
+}
